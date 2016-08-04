@@ -1,0 +1,108 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files (x86)\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\padma_000\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'i',
+1 verbose cli   'body_parser',
+1 verbose cli   '--save' ]
+2 info using npm@3.3.12
+3 info using node@v6.3.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData body_parser
+8 silly fetchNamedPackageData body_parser
+9 silly mapToRegistry name body_parser
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/body_parser
+13 verbose request uri https://registry.npmjs.org/body_parser
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 7:43:58 PM
+16 verbose request id fa9fbf2ce84ec46b
+17 http request GET https://registry.npmjs.org/body_parser
+18 http 404 https://registry.npmjs.org/body_parser
+19 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+19 verbose headers   etag: '"1FN33H7U7DQMLDBI38J6ASB3S"',
+19 verbose headers   'content-type': 'application/json',
+19 verbose headers   'cache-control': 'max-age=0',
+19 verbose headers   'content-length': '407',
+19 verbose headers   'accept-ranges': 'bytes',
+19 verbose headers   date: 'Thu, 04 Aug 2016 23:43:55 GMT',
+19 verbose headers   via: '1.1 varnish',
+19 verbose headers   age: '0',
+19 verbose headers   connection: 'keep-alive',
+19 verbose headers   'x-served-by': 'cache-iad2635-IAD',
+19 verbose headers   'x-cache': 'MISS',
+19 verbose headers   'x-cache-hits': '0',
+19 verbose headers   'x-timer': 'S1470354235.746626,VS0,VE62',
+19 verbose headers   vary: 'Accept-Encoding' }
+20 silly get cb [ 404,
+20 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+20 silly get     etag: '"1FN33H7U7DQMLDBI38J6ASB3S"',
+20 silly get     'content-type': 'application/json',
+20 silly get     'cache-control': 'max-age=0',
+20 silly get     'content-length': '407',
+20 silly get     'accept-ranges': 'bytes',
+20 silly get     date: 'Thu, 04 Aug 2016 23:43:55 GMT',
+20 silly get     via: '1.1 varnish',
+20 silly get     age: '0',
+20 silly get     connection: 'keep-alive',
+20 silly get     'x-served-by': 'cache-iad2635-IAD',
+20 silly get     'x-cache': 'MISS',
+20 silly get     'x-cache-hits': '0',
+20 silly get     'x-timer': 'S1470354235.746626,VS0,VE62',
+20 silly get     vary: 'Accept-Encoding' } ]
+21 silly fetchPackageMetaData Error: Registry returned 404 for GET on https://registry.npmjs.org/body_parser
+21 silly fetchPackageMetaData     at makeError (C:\Users\padma_000\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+21 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (C:\Users\padma_000\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:242:14)
+21 silly fetchPackageMetaData     at Request._callback (C:\Users\padma_000\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+21 silly fetchPackageMetaData     at Request.self.callback (C:\Users\padma_000\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:198:22)
+21 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+21 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+21 silly fetchPackageMetaData     at Request.<anonymous> (C:\Users\padma_000\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:1082:10)
+21 silly fetchPackageMetaData     at emitOne (events.js:101:20)
+21 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+21 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (C:\Users\padma_000\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:1009:12)
+21 silly fetchPackageMetaData  error for body_parser { Error: Registry returned 404 for GET on https://registry.npmjs.org/body_parser
+21 silly fetchPackageMetaData     at makeError (C:\Users\padma_000\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+21 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (C:\Users\padma_000\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:242:14)
+21 silly fetchPackageMetaData     at Request._callback (C:\Users\padma_000\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+21 silly fetchPackageMetaData     at Request.self.callback (C:\Users\padma_000\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:198:22)
+21 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+21 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+21 silly fetchPackageMetaData     at Request.<anonymous> (C:\Users\padma_000\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:1082:10)
+21 silly fetchPackageMetaData     at emitOne (events.js:101:20)
+21 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+21 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (C:\Users\padma_000\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:1009:12) pkgid: 'body_parser', statusCode: 404, code: 'E404' }
+22 silly rollbackFailedOptional Starting
+23 silly rollbackFailedOptional Finishing
+24 silly runTopLevelLifecycles Starting
+25 silly runTopLevelLifecycles Finishing
+26 silly install printInstalled
+27 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/body_parser
+27 verbose stack     at makeError (C:\Users\padma_000\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+27 verbose stack     at CachingRegistryClient.<anonymous> (C:\Users\padma_000\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:242:14)
+27 verbose stack     at Request._callback (C:\Users\padma_000\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+27 verbose stack     at Request.self.callback (C:\Users\padma_000\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:198:22)
+27 verbose stack     at emitTwo (events.js:106:13)
+27 verbose stack     at Request.emit (events.js:191:7)
+27 verbose stack     at Request.<anonymous> (C:\Users\padma_000\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:1082:10)
+27 verbose stack     at emitOne (events.js:101:20)
+27 verbose stack     at Request.emit (events.js:188:7)
+27 verbose stack     at IncomingMessage.<anonymous> (C:\Users\padma_000\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:1009:12)
+28 verbose statusCode 404
+29 verbose pkgid body_parser
+30 verbose cwd C:\Users\padma_000\Desktop\BootCamp\burger
+31 error Windows_NT 10.0.10586
+32 error argv "C:\\Program Files (x86)\\nodejs\\node.exe" "C:\\Users\\padma_000\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "i" "body_parser" "--save"
+33 error node v6.3.0
+34 error npm  v3.3.12
+35 error code E404
+36 error 404 Registry returned 404 for GET on https://registry.npmjs.org/body_parser
+36 error 404
+36 error 404 'body_parser' is not in the npm registry.
+36 error 404 You should bug the author to publish it (or use the name yourself!)
+36 error 404
+36 error 404 Note that you can also install from a
+36 error 404 tarball, folder, http url, or git url.
+37 verbose exit [ 1, true ]

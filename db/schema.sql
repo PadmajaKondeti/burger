@@ -2,7 +2,7 @@
 
 CREATE DATABASE burgers_db;
 USE burgers_db;
-select * from 
+
 drop table burgers;
 CREATE TABLE burgers
 (
