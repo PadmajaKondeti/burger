@@ -1,43 +1,54 @@
-<h1><img src="../public/assets/img/burger.png" alt="burger" height="42" width="42"><h2>
-<h2>Eat-De-Burger</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#unless this.devoured}}
-      <li>
-        {{this.burger_name}}
-
-        <form action="burgers/update/{{this.id}}?_method=PUT" method="POST">
-          <input type="hidden" name="devoured" value="true">
-          <button type="submit">Devoure it!</button>     
-        </form>
-      </li>
-    {{/unless}}
-  {{/each}}
-</ul>
-
-<h2>Burgers you devoured!</h2>
-<ul>
-  {{#each burgers}}
-    {{#if this.devoured}}
-      <li>
-        <form action="burgers/update/{{this.id}}?_method=PUT" method="POST">
-          <input type="hidden" name="devoured" value="false">
-         <p> {{this.burger_name}}</p>
-        </form>
-
-
-      </li>
-    {{/if}}
-  {{/each}}
-</ul>
-<p>Enter a burger you want to eat Click the "Submit" button"</p>
-<h2>Add a burger</h2>
-<form class="create-update-form" action="burgers/create" method="POST">
-
-  <div class="form-group">
-    <label for="bur">Burger Name:</label>
-    <input type="text" id="bur" name="burger_name">
+<div class="jumbotron">
+<h1>
+Eat-De-Burger</h1>
+<img src="/assets/img/burger.png" alt="burger" height="42" width="42"/>
+</div>
+<!--div class= "devoured"-->
+<div class="container">
+  <div class= "undev" >
+    <h2>Ready to devoured!</h2>
+    <ol>
+      {{#each burgers}}
+        {{#unless this.devoured}}
+          <li>
+           
+       
+            <form action="burgers/update/{{this.id}}?_method=PUT" method="POST"> <!-- <div class="form-group"> -->
+              {{this.burger_name}}
+              <input type="hidden" name="devoured" value="true">
+              <button class="bttn-burger" type="submit">Devoure it!</button>  
+              <!-- </div> -->
+            </form>
+       <!--  </div> -->
+          </li>
+        {{/unless}}
+      {{/each}}
+    </ol>
   </div>
-<button type="submit">Add Burger</button>
- </form>
+  <div class= "devoured " >
+    <h2>Devoured!</h2>
+    <ol>
+      {{#each burgers}}
+        {{#if this.devoured}}
+          <li>
+              <input type="hidden" name="devoured" value="false">
+              {{this.burger_name}}
+          </li>
+        {{/if}}
+      {{/each}}
+    </ol>
+  </div>
+</div>
+<hr>
+<br>
+<div class="add-bur">
+  <p>Enter a burger you want to eat Click the "Submit" button"</p>
+  <form class="create-update-form" action="burgers/create" method="POST">
+    <h2>Add a burger</h2>
+      <div class="form-group">
+        <label for="bur">Burger Name:</label>
+        <input type="text" id="bur" name="burger_name">
+      </div>
+      <button type="submit">Add Burger</button>
+   </form>
+</div>

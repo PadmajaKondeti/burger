@@ -1,20 +1,35 @@
-/*li {
+li {
   background: #FAEBD7;
   margin: 5px;
   padding: 5px;
+  height:  35px;
 }
-
+.jumbotron{
+    text-align:   center; 
+}
 .label {
   font-weight: bold;
 }
-
+.bttn-burger{
+  float:right;
+}
 .create-update-form {
   background: aqua;
-  margin: 5px;
-  padding: 5px;
+  margin: 5px 0px;
+  padding: 5px;*/
 }
 
 .form-group {
+  margin-top: 5px;
   margin-bottom: 5px;
 }
-*/
+.devoured{
+	float:right;
+}
+.undev{
+	float: 	left;
+}
+.add-bur{
+  text-align:center;
+  width:100%;
+}
