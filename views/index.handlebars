@@ -5,15 +5,13 @@ Eat-De-Burger</h1>
 </div>
 <!--div class= "devoured"-->
 <div class="container">
-  <div class= "undev" >
+  <div class= "undev col-xs-12 col-md-5" >
     <h2>Ready to devoured!</h2>
     <ol>
       {{#each burgers}}
         {{#unless this.devoured}}
           <li>
-           
-       
-            <form action="burgers/update/{{this.id}}?_method=PUT" method="POST"> <!-- <div class="form-group"> -->
+           <form action="burgers/update/{{this.id}}?_method=PUT" method="POST"> <!-- <div class="form-group"> -->
               {{this.burger_name}}
               <input type="hidden" name="devoured" value="true">
               <button class="bttn-burger" type="submit">Devoure it!</button>  
@@ -25,7 +23,7 @@ Eat-De-Burger</h1>
       {{/each}}
     </ol>
   </div>
-  <div class= "devoured " >
+  <div class= "devoured col-xs-12 col-md-5 " >
     <h2>Devoured!</h2>
     <ol>
       {{#each burgers}}
